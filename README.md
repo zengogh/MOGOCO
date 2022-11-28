@@ -1,2 +1,2 @@
-# MOGOCO For Typecho Theme-
+# MOGOCO For Typecho Theme
 ### 一个资源下载类型的Typecho主题

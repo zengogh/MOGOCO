@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(Components.css);
+:root {
+  --Light: #dcdcdc;
+  --grey: #d3d3d3;
+  --M-grey: #c0c0c0;
+  --dark: #636363;
+  --blue: #007bff;
+  --white: #fff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffeb3b;
+  --danger: #dc3545;
+  --Light-plum: #a96693;
+  --plum: #77216f;
+  --mid-plum: #5e2750;
+  --dark-plum: #5e2750;
+  --Light-mango: #ffecb3;
+  --mango: #ffca28;
+  --dark-mango: #ff8f00;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Inter UI",
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--dark);
+  text-decoration: none;
+}
+/* 云母-mica效果 */
+.mica {
+  background-color: rgba(255, 255, 255, 0.73);
+  backdrop-filter: saturate(180%) blur(1.25rem);
+}
+html {
+  width: 100vw;
+  padding-right: calc(100vw - 100%);
+}
+body {
+  background-color: var(--Light);
+  width: 100%;
+  overflow-x: hidden;
+}
+/** -- 布局Layout*/
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 9;
+  box-shadow: 0 1rem 1rem -1.5rem var(--dark);
+}
+/** -- 左右侧边栏*/
+/** -PC*/
+@media screen and (min-width: 1200px) {
+  .sidebar-left,
+  .sidebar-right {
+    position: fixed;
+    top: 3.5rem;
+    height: calc(100% - 3.5rem);
+    z-index: 9;
+  }
+  .sidebar-left {
+    left: 0;
+    box-shadow: 1rem -0.5rem 1rem -1.5rem var(--dark);
+  }
+  .sidebar-right {
+    right: 0;
+    width: 18rem;
+    box-shadow: -1rem -0.5rem 1rem -1.5rem var(--dark);
+    padding-top: 2rem;
+  }
+  /**--页面内容*/
+  .website-body {
+    padding-left: 15rem;
+  }
+  .card-item {
+    width: 20%;
+  }
+  /* 文章页面布局 */
+  .post-body {
+    width: calc(100% - 18rem);
+  }
+    /*-随机文章-*/
+    .AssetPage_similar {
+      flex-direction: row;
+    }
+    /*-独立页面样式-*/
+.page-body {
+  width: 61.8%;
+  margin: 1rem auto;
+}
+footer ul {
+  flex-direction: row;
+  gap: 1rem;
+}
+}
+
+/**手机屏幕 */
+@media screen and (max-width: 1024px) {
+  .sidebar-left,
+  .sidebar-right {
+    display: none;
+  }
+  /**--页面内容-*/
+  .website-body {
+    width: 100%;
+  }
+    /*-随机文章-*/
+    .AssetPage_similar {
+      flex-direction:column;
+    }
+  
+  .card-item {
+    width: 96%;
+  }
+  /*-独立页面样式-*/
+.page-body {
+  width: 98%;
+  margin: 1rem auto;
+}
+ .post-body {
+    width: 100%;
+  }
+  footer ul {
+    flex-direction:column;
+
+  }
+}
+ 
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+article {
+  width: 86%;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.post-title {
+  text-align: center;
+}
+.post-near {
+  width: 86%;
+  margin: 0 auto;
+}
+/*文章页面内下载-*/
+.Download,
+.post-meta {
+  width: 90%;
+  margin: 0 auto;
+}
+.Download h3 {
+  background: var(--plum);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 3rem;
+}
+.Download h3 i,
+.Download h3 a {
+  color: var(--white);
+}
+.Download h3 i {
+  padding-right: 1rem;
+  border-right: 1px solid var(--Light-plum);
+}
+.post-meta {
+  margin-top: 1rem;
+}
+.post-meta li {
+  line-height: 2.5rem;
+}
+/*-独立页面样式-*/
+
+.page-body p {
+  text-indent: 2rem;
+}
+.post-content img {
+  display: block;
+  margin: 0 auto;
+  width: 61.8%;
+}
+/*-页面底部-*/
+footer {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+  background: var(--plum);
+  text-align: center;
+  box-shadow: inset 0 1rem 1.5rem -0.5rem rgba(0, 0, 0, 0.5);
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+
+}
+footer a,
+footer span {
+  color: var(--Light);
+}

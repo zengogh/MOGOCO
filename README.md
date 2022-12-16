@@ -1,7 +1,7 @@
 # MOGOCO For Typecho Theme
 ### 一个资源下载类型的Typecho主题
 ![Alt text](screenshot.png)
-#### 主题预览：<a target="_blank" href="http://mogoco.ml">http://mogoco.ml</a>
+#### 主题预览：<a target="blank" href="http://mogoco.ml">http://mogoco.ml</a>
 ### 文件结构说明:
 > |--- MOGOCO  
 > |--- archive.php ---------------- 通用（分类、搜索、标签、作者）页面文件  

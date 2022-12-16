@@ -202,6 +202,30 @@ article {
   margin: 0 auto;
   width: 61.8%;
 }
+/* 标签云  */
+.tags-title{
+  margin:1rem auto;
+  text-indent: 0.5rem;
+}
+.tags-title i{
+  color:var(--dark-mango);
+}
+.tags-list{
+  padding:0 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tags-list li a{
+  border:1px solid var(--Light-plum);
+  padding:0 0.3rem;
+  border-radius: 0.3rem;
+}
+.tags-list li a:hover{
+  color: var(--white);
+  background: var(--plum);
+}
 /*-页面底部-*/
 footer {
   width: 100%;

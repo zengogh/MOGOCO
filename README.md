@@ -1,7 +1,15 @@
 # MOGOCO For Typecho Theme
 ### 一个资源下载类型的Typecho主题
 ![Alt text](screenshot.png)
+---
 #### 主题预览：<a target="blank" href="http://mogoco.ml">http://mogoco.ml</a>
+### 主题特点:
+1. 简洁的flex响应式布局  
+2. 纯css下拉菜单  
+3. functions.php内增加下载功能，下载按钮内置在右侧边栏，发布文章的下面的字段中只需要添加下载地址即可。  
+4. 右侧边栏增加评论展示与标签云
+5. 底部友情链接
+6. 
 ### 文件结构说明:
 > |--- MOGOCO  
 > |--- archive.php ---------------- 通用（分类、搜索、标签、作者）页面文件  
@@ -29,3 +37,5 @@
 
 > |---screenshot.png ------------ 主题缩略图  
 
+### 使用说明
+:
